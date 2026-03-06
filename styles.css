@@ -608,7 +608,7 @@ footer {
 
 @media screen and (min-width: 421px) and (max-width: 550px)  {
   body {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .text {
     font-size: 1.15rem;
@@ -652,17 +652,6 @@ footer {
   .contact .row {
     width: 80%;
   }
-
-  .skill-main {
-    width: 85%;
-    margin: auto;
-  }
-
-  .progress {
-    width: 85%;
-    padding: 0;
-  }
-  
   
   
 }
@@ -711,3 +700,4 @@ footer {
     transition: none;
   }
 }
+
