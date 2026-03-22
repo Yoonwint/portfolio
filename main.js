@@ -2,7 +2,7 @@ const navbar = document.querySelector(".navbar");
 const navbarMenu = document.getElementById("navBar");
 const navLinks = document.querySelectorAll(".nav-link");
 const text = document.querySelector(".multiple-text");
-const hidden = document.querySelectorAll(".hidden");
+
 
 //Preloader
 const preloader = document.querySelector("#preloader");
@@ -38,21 +38,4 @@ function textLoad(){
     }
 };
 textLoad();
-
-// on-scroll animation
-function checkWindowWidth() {
-  if (window.innerWidth <= 600){
-    console.log("hello world");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }else {
-          entry.target.classList.remove('show');
-        }
-      });
-    });
-    hidden.forEach((el) => observer.observe(el));
-  };
-  window.onload = checkWindowWidth;
 
